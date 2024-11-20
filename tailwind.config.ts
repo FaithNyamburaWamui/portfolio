@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      fontFamily: {
+        sans: ['Jost', 'sans-serif'], // Set Jost as the default sans font
+        jost: ['Jost', 'sans-serif'], // Define a custom font alias
+      },
     },
   },
   plugins: [],
