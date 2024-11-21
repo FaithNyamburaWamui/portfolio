@@ -39,11 +39,11 @@ const projects = [
   },
 
   {
-    title: "Mkulima Mobile App Design",
+    title: "Food House website",
     description:
-      "Mobile app design which has two user who are the agents and the chicken farmers used for providing a central platform where they can both communicate.",
-    image: "/images/chicken.png",
-    url: "https://www.figma.com/design/RvTgRWqwcJ8G3VKKZt86mi/Mkulima-Mobile-App?node-id=21-183&node-type=canvas&t=MGMKBlv8EClWLitT-0", // Placeholder; replace with actual URL if available
+      "Food House is a website showcase different kinds of food and coded using Nextjs.",
+    image: "/images/food.png",
+    url: "https://foodwebsite-m8dd.vercel.app/", // Placeholder; replace with actual URL if available
   },
 ];
 
@@ -53,10 +53,10 @@ export default function Projects() {
   };
 
   return (
-    <section id="project" className="bg-[#010C04] text-white py-16">
+    <section id="project" className="bg-[#010C04] text-white py-16 mt-[-9%]">
       <div className="max-w-[70%] px-14 sm:px-10 ml-[15%]">
         <h2 className="text-[35px] font-semibold mb-10 text-center">
-          Latest Work -{" "}
+          Latest Work -
           <span className="text-[#53C218] text-[35px]">
             Explore My Projects
           </span>

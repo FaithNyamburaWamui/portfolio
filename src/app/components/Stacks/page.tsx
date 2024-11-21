@@ -8,11 +8,8 @@ import {
   SiNextdotjs,
   SiKotlin,
   SiFigma,
-  SiAdobecreativecloud,
   SiDjango,
   SiPython,
-  SiJira,
-  SiBehance
 } from "react-icons/si";
 
 const AboutMe = () => {
@@ -24,11 +21,8 @@ const AboutMe = () => {
     { Icon: SiNextdotjs, name: "Next.js", color: "#ffffff" },
     { Icon: SiKotlin, name: "Kotlin", color: "#7F52FF" },
     { Icon: SiFigma, name: "Figma", color: "#F24E1E" },
-    { Icon: SiAdobecreativecloud, name: "Adobe", color: "#FF0000" },
     { Icon: SiDjango, name: "Django", color: "#092E20" },
     { Icon: SiPython, name: "Python", color: "#3776AB" },
-    { Icon: SiJira, name: "Jira", color: "#0052CC" },
-    { Icon: SiBehance, name: "Behance", color: "#1769FF" }
   ];
 
   return (
@@ -37,7 +31,7 @@ const AboutMe = () => {
       <div className="w-full max-w-6xl mx-auto px-4 py-16">
         <div className="flex flex-col  justify-center space-y-12">
           {/* Header */}
-          <h2 className="text-[35px] font-bold text-[#53C218] text-center">
+          <h2 className="text-[35px] font-bold text-[#53C218] text-center mt-[30px]">
             Stacks
           </h2>
 
