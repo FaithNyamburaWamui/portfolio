@@ -90,7 +90,7 @@ const ServicesGrid = () => {
   ];
 
   return (
-      <div className="min-h-screen bg-[#010C04] p-8 mt-[-16%]">
+      <div className="min-h-screen bg-[#010C04] p-8 xl:mt-[-16%]">
         <h2 className="text-[35px] font-bold text-white mb-6 text-center">
           Services
         </h2>
