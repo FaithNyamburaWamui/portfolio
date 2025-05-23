@@ -34,7 +34,7 @@ const ServiceCard = ({ title, Icon, services }: ServiceCardProps) => {
         {services.map((service, index) => (
           <li
             key={index}
-            className="text-white text-[17px] flex items-center justify-center w-full px-60 whitespace-nowrap"
+            className="text-white text-[17px] flex items-center w-full px-28 whitespace-nowrap"
           >
             <span className="w-3 h-3 bg-white rounded-full mr-3 flex-shrink-0"></span>
             <span className="flex-1">{service}</span>
@@ -63,7 +63,7 @@ const ServicesGrid = () => {
       services: [
         "Creation of responsive websites",
         "HTML, CSS & JavaScript",
-        "Using NetJs and ReactJs",
+        "Using NextJs, React and coreUi for styling",
         "Website performance",
       ],
     },

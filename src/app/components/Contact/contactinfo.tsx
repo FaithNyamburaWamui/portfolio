@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Mail, Phone, Calendar, MapPin, LucideIcon } from "lucide-react";
+import { Mail, MapPin, LucideIcon } from "lucide-react";
 
 interface InfoItemProps {
   Icon: LucideIcon;
@@ -24,19 +24,16 @@ const ContactInfo = () => {
       <h2 className="mb-8 text-[30px] font-semibold text-[#53C218] ml-[20%]">
         Contact Information
       </h2>
-      <InfoItem
-        Icon={Mail}
-        label="Email"
-        value="faithnyamburawamui@gmail.com"
-      />
-      <InfoItem Icon={Phone} label="Phone" value="+254 757 047 583" />
-      <InfoItem Icon={Calendar} label="DOB" value="12th December 2004" />
-      <InfoItem Icon={MapPin} label="Location" value="Nairobi, Kenya" />
+      <div className="mt-16">
+        <InfoItem
+          Icon={Mail}
+          label="Email"
+          value="faithnyamburawamui@gmail.com"
+        />
+        <InfoItem Icon={MapPin} label="Location" value="Nairobi, Kenya" />
+      </div>
     </div>
   );
 };
 
 export default ContactInfo;
-
-
-
