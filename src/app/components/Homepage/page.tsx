@@ -1,7 +1,6 @@
 "use client";
-
 import { useState, useEffect } from "react";
-import { FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import Image from "next/image";
 
@@ -17,24 +16,24 @@ const Homepage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
-    }, 3000); // Changes every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [roles.length]);
 
   return (
     <section id="home">
-      <div className="min-h-screen flex flex-col lg:flex-row w-full inset-0 overflow-hidden">
-        <div className="w-full lg:w-3/4 bg-[#010C04] p-4 sm:p-6 md:p-8 lg:p-16 flex flex-col justify-center lg:mt-0 xl:mt-[-16%]">
-          <h1 className="text-[30px] md:text-[40px] lg:text-[50px] text-white mb-4 font-semibold ml-[10px] sm:ml-[20px] md:ml-[40px] lg:ml-[180px] hover:text-[#53C218] xl:ml-[150px]">
+      <div className="min-h-screen flex flex-col lg:flex-row w-full inset-0 overflow-hidden bg-[#010C04] mt-[-20px] lg:mt-[-50px]">
+        <div className="w-full lg:w-3/4 sm:p-6 md:p-8 lg:p-16 flex flex-col lg:mt-0 xl:mt-[-13%] xl:ml-[-70px]">
+          <h1 className="mt-3 xl:text-start xl:text-[45px] xl:mt-44 text-[30px] sm:text-[32px] md:text-[40px] lg:text-start lg:text-[50px] text-white mb-2 font-semibold text-center sm:ml-[20px] md:text-center xl:ml-[150px] hover:text-[#53C218] transition-colors duration-200">
             Faith Nyambura
           </h1>
 
-          <p className="text-white mb-7 ml-[10px] sm:ml-[20px] md:ml-[40px] lg:ml-[70px] text-[20px] md:text-[25px] lg:text-[30px] hover:text-[#53C218] transition-all duration-500 xl:ml-[150px]">
+          <p className="text-white mb-5 text-center sm:ml-[20px] md:text-center lg:text-start xl:text-start xl:ml-[150px] xl:mt-[-8px] text-[21px] sm:text-[22px] md:text-[30px] lg:text-[30px] hover:text-[#53C218] transition-all duration-500 xl:text-[28px]">
             I am a <span className="text-[#53C218]">{roles[roleIndex]}</span>
           </p>
 
-          <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-relaxed mb-6 text-white w-full sm:w-[90%] md:w-[85%] lg:w-[80%] ml-[10px] sm:ml-[20px] md:ml-[40px] lg:ml-[50px] hover:text-[#53C218] xl:w-[60%] xl:ml-[150px]">
+          <p className="text-[16px] sm:text-[17px] md:text-[20px] lg:text-[20px] leading-relaxed text-white sm:text-wrap md:w-[80%] md:ml-[80px] lg:w-[70%] xl:w-[63%] xl:mt-[-8px] ml-[10px] sm:ml-[20px] lg:ml-[10px] xl:ml-[150px] xl:text-[19px] hover:text-[#53C218] transition-colors duration-200">
             Faith is a creative person and has always been interested in how
             technology works and integrates with other fields to increase
             productivity. She is passionate about leveraging technology to
@@ -45,23 +44,23 @@ const Homepage = () => {
             to solve existing problems.
           </p>
 
-          <button className="border-[#53C218] border-2 text-white px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-full w-fit hover:bg-[#53C218] transition-colors text-[14px] md:text-[16px] lg:text-[17px] ml-[10px] sm:ml-[20px] md:ml-[40px] lg:ml-[70px] mt-[20px] xl:ml-[150px]">
+          <button className="border-[#53C218] border-2 text-white xl:px-8 px-5 lg:px-10 xl:py-2 py-3 lg:py-4 rounded-full w-fit hover:bg-[#53C218] transition-colors duration-200 text-[18px] sm:text-[15px] md:text-[22px] md:mx-auto md:px-8 lg:text-[20px] mx-auto lg:ml-[5px] xl:ml-[150px] mt-[30px] md:mb-4">
             <a
               href="/documents/Faith Nyambura Resume.pdf"
               download="Faith Nyambura Resume.pdf"
-              className="text-white hover:text-[#010C04]"
+              className="text-white hover:text-[#010C04] transition-colors duration-200"
             >
               Download CV
             </a>
           </button>
 
           {/* Social Links */}
-          <div className="social-links flex gap-4 sm:gap-6 md:gap-10 lg:gap-14 ml-[10px] sm:ml-[20px] md:ml-[40px] lg:ml-[70px] mt-8 lg:mt-16 xl:ml-[150px]">
+          <div className="social-links flex gap-5 sm:gap-6 md:gap-10 lg:gap-14 justify-center sm:ml-[20px] md:justify-center lg:justify-start xl:ml-[150px] xl:mt-3 xl:justify-start xl:gap-12 mt-8 lg:mt-4">
             <a
               href="https://github.com/FaithNyamburaWamui"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-[#53C218] text-2xl sm:text-3xl lg:text-5xl transition-colors"
+              className="text-white hover:text-[#53C218] text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl transition-colors duration-200"
             >
               <TbBrandGithubFilled />
             </a>
@@ -69,7 +68,7 @@ const Homepage = () => {
               href="https://www.linkedin.com/in/faith-nyambura-2370872b5/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-[#53C218] text-2xl sm:text-3xl lg:text-5xl transition-colors"
+              className="text-white hover:text-[#53C218] text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl transition-colors duration-200"
             >
               <FaLinkedinIn />
             </a>
@@ -77,20 +76,20 @@ const Homepage = () => {
               href="https://x.com/WamuiFaith"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-[#53C218] text-2xl sm:text-3xl lg:text-5xl transition-colors"
+              className="text-white hover:text-[#53C218] text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl transition-colors duration-200"
             >
               <FaTwitter />
             </a>
           </div>
         </div>
 
-        <div className="w-full lg:w-1/4 bg-[#010C04] p-4 sm:p-6 md:p-8 lg:p-16 flex items-center justify-center mt-0 sm:mt-[-5%] md:mt-[-8%] lg:mt-[-10%] xl:mt-[-17%]">
-          <div className="relative w-full aspect-square md:w-[70%] lg:w-[200%] lg:h-[60%] ml-0 lg:ml-[-100%] xl:w-[150%] xl:h-[40%] xl:mr-[100px]">
+        <div className="w-full lg:w-1/4 p-4 sm:p-6 md:p-8 lg:p-16 flex items-center justify-center mt-0 sm:mt-[-5%] md:mt-[-10px] lg:mt-[-10%]">
+          <div className="relative w-[90%] aspect-square sm:w-[85%] md:w-[70%] lg:w-[300%] lg:h-[50%] lg:ml-[-200%] xl:w-[250%] xl:h-[70%] xl:ml-[-200px] xl:mt-[30%] mx-auto">
             <Image
               src="/images/faith.jpeg"
               alt="Profile"
               fill
-              className="rounded-[30px] sm:rounded-[50px] lg:rounded-[70px] object-cover"
+              className="rounded-[30px] sm:rounded-[40px] md:rounded-[50px] lg:rounded-[70px] object-cover"
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />
