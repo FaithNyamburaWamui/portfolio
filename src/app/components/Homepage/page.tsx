@@ -24,16 +24,16 @@ const Homepage = () => {
   return (
     <section id="home">
       <div className="min-h-screen flex flex-col lg:flex-row w-full inset-0 overflow-hidden bg-[#010C04] mt-[-20px] lg:mt-[-50px]">
-        <div className="w-full lg:w-3/4 sm:p-6 md:p-8 lg:p-16 flex flex-col lg:mt-0 xl:mt-[-13%] xl:ml-[-70px]">
-          <h1 className="mt-3 xl:text-start xl:text-[45px] xl:mt-44 text-[30px] sm:text-[32px] md:text-[40px] lg:text-start lg:text-[50px] text-white mb-2 font-semibold text-center sm:ml-[20px] md:text-center xl:ml-[150px] hover:text-[#53C218] transition-colors duration-200">
+        <div className="w-full lg:w-3/4 sm:p-6 md:p-8 lg:p-16 flex flex-col lg:mt-0 xl:mt-[-13%] xl:ml-[-85px]">
+          <h1 className="mt-3 xl:text-start xl:text-[38px] xl:mt-44 text-[30px] sm:text-[32px] md:text-[40px] lg:text-start lg:text-[30px] text-white mb-2 font-semibold text-center sm:ml-[20px] md:text-center xl:ml-[150px] hover:text-[#53C218] transition-colors duration-200">
             Faith Nyambura
           </h1>
 
-          <p className="text-white mb-5 text-center sm:ml-[20px] md:text-center lg:text-start xl:text-start xl:ml-[150px] xl:mt-[-8px] text-[21px] sm:text-[22px] md:text-[30px] lg:text-[30px] hover:text-[#53C218] transition-all duration-500 xl:text-[28px]">
+          <p className="text-white mb-5 text-center sm:ml-[20px] md:text-center lg:text-start xl:text-start xl:ml-[150px] xl:mt-[-8px] text-[21px] sm:text-[22px] md:text-[30px] lg:text-[24px] hover:text-[#53C218] transition-all duration-500 xl:text-[23px]">
             I am a <span className="text-[#53C218]">{roles[roleIndex]}</span>
           </p>
 
-          <p className="text-[16px] sm:text-[17px] md:text-[20px] lg:text-[20px] leading-relaxed text-white sm:text-wrap md:w-[80%] md:ml-[80px] lg:w-[70%] xl:w-[63%] xl:mt-[-8px] ml-[10px] sm:ml-[20px] lg:ml-[10px] xl:ml-[150px] xl:text-[19px] hover:text-[#53C218] transition-colors duration-200">
+          <p className="text-[16px] sm:text-[17px] md:text-[20px] lg:text-[18px] leading-relaxed text-white sm:text-wrap md:w-[80%] md:ml-[80px] lg:w-[70%] xl:w-[63%] xl:mt-[-8px] ml-[10px] sm:ml-[20px] lg:ml-[10px] xl:ml-[150px] xl:text-[18px] hover:text-[#53C218] transition-colors duration-200">
             Faith is a creative person and has always been interested in how
             technology works and integrates with other fields to increase
             productivity. She is passionate about leveraging technology to
@@ -44,7 +44,7 @@ const Homepage = () => {
             to solve existing problems.
           </p>
 
-          <button className="border-[#53C218] border-2 text-white xl:px-8 px-5 lg:px-10 xl:py-2 py-3 lg:py-4 rounded-full w-fit hover:bg-[#53C218] transition-colors duration-200 text-[18px] sm:text-[15px] md:text-[22px] md:mx-auto md:px-8 lg:text-[20px] mx-auto lg:ml-[5px] xl:ml-[150px] mt-[30px] md:mb-4">
+          <button className="border-[#53C218] border-2 text-white xl:px-6 px-5 lg:px-10 xl:py-2 py-3 lg:py-4 rounded-full w-fit hover:bg-[#53C218] transition-colors duration-200 text-[18px] sm:text-[15px] md:text-[22px] md:mx-auto md:px-8 lg:text-[18px] mx-auto lg:ml-[5px] xl:ml-[150px] mt-[30px] md:mb-4">
             <a
               href="/documents/Faith Nyambura Resume.pdf"
               download="Faith Nyambura Resume.pdf"
@@ -84,7 +84,7 @@ const Homepage = () => {
         </div>
 
         <div className="w-full lg:w-1/4 p-4 sm:p-6 md:p-8 lg:p-16 flex items-center justify-center mt-0 sm:mt-[-5%] md:mt-[-10px] lg:mt-[-10%]">
-          <div className="relative w-[90%] aspect-square sm:w-[85%] md:w-[70%] lg:w-[300%] lg:h-[50%] lg:ml-[-200%] xl:w-[250%] xl:h-[70%] xl:ml-[-200px] xl:mt-[30%] mx-auto">
+          <div className="relative w-[90%] aspect-square sm:w-[85%] md:w-[70%] lg:w-[300%] lg:h-[50%] lg:ml-[-200%] xl:w-[200%] xl:h-[60%] xl:ml-[-200px] xl:mt-[20%] mx-auto">
             <Image
               src="/images/faith.jpeg"
               alt="Profile"

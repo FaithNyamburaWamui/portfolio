@@ -20,39 +20,39 @@ const Navbar = () => {
             alt="Logo"
             width={120}
             height={24}
-            className="transform rotate-12 ml-[-15px] sm:ml-[-20px] md:ml-[-30px] w-24 h-auto sm:w-44 md:w-52 lg:w-56 xl:w-52"
+            className="transform rotate-12 ml-[-15px] sm:ml-[-20px] md:ml-[-30px] w-40 h-auto sm:w-44 md:w-52 lg:w-56 xl:w-52"
           />
         </div>
 
         {/* Desktop Navigation Links - Only visible on large screens and above */}
-        <div className="hidden lg:flex xl:gap-40 lg:gap-20">
+        <div className="hidden lg:flex xl:gap-36 lg:gap-20">
           <a
             href="#home"
-            className="text-white hover:text-[#53C218] text-base lg:text-lg xl:text-[20px] hover:font-medium transition-colors duration-200"
+            className="text-white hover:text-[#53C218] text-base lg:text-lg xl:text-[18px] hover:font-medium transition-colors duration-200"
           >
             Home
           </a>
           <a
             href="#services"
-            className="text-white hover:text-[#53C218] text-base lg:text-lg xl:text-[20px] hover:font-medium transition-colors duration-200"
+            className="text-white hover:text-[#53C218] text-base lg:text-lg xl:text-[18px] hover:font-medium transition-colors duration-200"
           >
             Services
           </a>
           <a
             href="#stacks"
-            className="text-white hover:text-[#53C218] text-base lg:text-lg xl:text-[20px] hover:font-medium transition-colors duration-200"
+            className="text-white hover:text-[#53C218] text-base lg:text-lg xl:text-[18px] hover:font-medium transition-colors duration-200"
           >
             Stacks
           </a>
           <a
             href="#project"
-            className="text-white hover:text-[#53C218] text-base lg:text-lg xl:text-[20px] hover:font-medium transition-colors duration-200"
+            className="text-white hover:text-[#53C218] text-base lg:text-lg xl:text-[18px] hover:font-medium transition-colors duration-200"
           >
             Project
           </a>
           <a
             href="#contact"
-            className="text-white hover:text-[#53C218] text-base lg:text-lg xl:text-[20px] hover:font-medium transition-colors duration-200"
+            className="text-white hover:text-[#53C218] text-base lg:text-lg xl:text-[18px] hover:font-medium transition-colors duration-200"
           >
             Contact
           </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
         {/* Hamburger Icon for Mobile and Small Tablets */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-white text-2xl sm:text-3xl focus:outline-none mr-2 sm:mr-4 hover:text-[#53C218] transition-colors duration-200"
+          className="lg:hidden text-white text-3xl mt-[-20px] sm:text-3xl focus:outline-none mr-2 sm:mr-4 hover:text-[#53C218] transition-colors duration-200"
           aria-label="Toggle menu"
         >
           <FiMenu />
@@ -78,7 +78,7 @@ const Navbar = () => {
           >
             <AiOutlineClose />
           </button>
-          
+
           <ul className="flex flex-col items-center gap-6 sm:gap-8 md:gap-10">
             <li>
               <a

@@ -20,12 +20,12 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, Icon, services }: ServiceCardProps) => {
   return (
-    <div className="w-full sm:w-[calc(50%-2.5rem)] lg:w-[calc(50%-2.5rem)] xl:w-[calc(40%-2.5rem)] bg-[#419414] px-3 py-24 rounded-lg transition-all duration-300 hover:transform hover:scale-105 hover:bg-[#53C218] hover:shadow-xl">
+    <div className="w-full sm:w-[calc(50%-2.5rem)] lg:w-[calc(50%-2.5rem)] xl:w-[calc(40%-2.5rem)] xl:h-[430px] bg-[#419414] px-3 py-24 rounded-lg transition-all duration-300 hover:transform hover:scale-105 hover:bg-[#53C218] hover:shadow-xl">
       <section id="services">
         <div className="flex flex-col items-center mb-4">
-          <Icon className="w-32 h-24 text-yellow-300 mb-6 mt-[-20px]" />
+          <Icon className="w-32 h-24 xl:h-[78px] text-yellow-300 mb-6 mt-[-20px] xl:mt-[-50px]" />
         </div>
-        <h3 className="text-[22px] font-semibold text-white mb-4 ml-[40px]">
+        <h3 className="text-[22px] xl:text-[20px] font-semibold text-white mb-4 ml-[40px]">
           {title}
         </h3>
       </section>
@@ -90,11 +90,11 @@ const ServicesGrid = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#010C04] p-4 sm:p-6 md:p-8 xl:mt-[-30px] mt-[-2px] md:mt-[-50px]">
-      <h2 className="text-[28px] sm:text-[32px] md:text-[35px] font-bold text-white text-center">
+    <div className="min-h-screen bg-[#010C04] p-4 sm:p-6 md:p-8 xl:mt-[-130px] mt-[-2px] md:mt-[-50px]">
+      <h2 className="text-[28px] xl:text-[32px] sm:text-[32px] md:text-[35px] font-bold text-[#53C218] text-center">
         Services
       </h2>
-      <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 mt-14">
+      <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 mt-9">
         {services.map((service, index) => (
           <ServiceCard
             key={index}
