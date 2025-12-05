@@ -90,8 +90,8 @@ const ServicesGrid = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#010C04] p-4 sm:p-6 md:p-8 xl:mt-[-130px] mt-[-2px] md:mt-[-50px]">
-      <h2 className="text-[28px] xl:text-[32px] sm:text-[32px] md:text-[35px] font-bold text-[#53C218] text-center">
+    <div className="min-h-screen bg-[#010C04] p-4 sm:p-6 md:p-8 xl:mt-[-80px] mt-[-2px] md:mt-[-50px]">
+      <h2 className="text-[28px] xl:text-[30px] sm:text-[32px] md:text-[35px] font-bold text-[#53C218] text-center">
         Services
       </h2>
       <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 mt-9">

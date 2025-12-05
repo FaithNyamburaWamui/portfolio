@@ -57,7 +57,7 @@ export default function Projects() {
       className="bg-[#010C04] text-white py-12 sm:py-16 mt-[-7%] xl:mt-[-3%] md:mt-[-33%] lg:mt-[-6%]"
     >
       <div className="max-w-full sm:max-w-[90%] md:max-w-[90%] lg:max-w-[70%] xl:max-w-[90%] px-4 sm:px-6 md:px-10 lg:px-14 mx-auto">
-        <h2 className="text-[28px] sm:text-[32px] md:text-[35px] text-[#53C218] font-semibold mb-8 sm:mb-10 text-center">
+        <h2 className="text-[28px] xl:text-[30px] sm:text-[32px] md:text-[35px] text-[#53C218] font-semibold mb-8 sm:mb-10 text-center">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-20 sm:gap-10">
